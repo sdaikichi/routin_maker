@@ -1,4 +1,4 @@
-# routin_maker
+# routine_maker
 
 ## Setup
 1. create `credentials.json`
