@@ -46,7 +46,7 @@ schedule.scheduleJob('/20 * * * * *', ()=>{
   }, (err, results)=>{
     if(results) return;
     // アラート
-    request({url:'https://hooks.zapier.com/hooks/catch/4689442/oisrvj3/', method:'POST', json:{hoge:true}},(err, res, body)=>{
+    request({url:require('./config').ZAPIER_HOOK_URL , method:'POST', json:{hoge:true}},(err, res, body)=>{
       if(err)console.error(err)
       console.log(body);
     });
